@@ -146,10 +146,6 @@ small{
   margin-top: 10%;
 }
 
-.ema{
-  margin-bottom: 10px;
-}
-
 #textEmail{
   display: flex;
   flex-direction: row;
@@ -197,12 +193,35 @@ small{
 #email{
   height: 50px;
   width: 50%;
+  margin-top: 10px;
   border-radius: 8px;
 }
 
 #password{
   height: 50px;
   width: 50%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#email2{
+  height: 50px;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#password2{
+  height: 50px;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#nom{
+  height: 50px;
+  width: 50%;
+  margin-top: 10px;
   border-radius: 8px;
 }
 

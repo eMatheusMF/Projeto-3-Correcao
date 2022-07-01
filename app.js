@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 //---- TOKEN
 app.get('/user/:id', async (req, res) => {
-    const id = req.params.id;
+const id = req.params.id;
 
     // EXISTE
     const user = await User.findById(id, '-password');
@@ -32,7 +32,7 @@ app.get('/user/:id', async (req, res) => {
 
 //---- REGISTRO
 app.post('/auth/register', async (req, res) => {
-const { name, email, password, confirmpassword } = req.body;
+const { name, email, password, } = req.body;
 
 
 //---- VALIDACAO
