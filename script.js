@@ -12,6 +12,7 @@ function fecharlogin2()   {
     document.getElementById('segundo').style.top = "-100%";
 }
 
+
 const api = {
     key: "b1acd38efcd959af9979088d310b48a2",
     base: "https://api.openweathermap.org/data/2.5/",
@@ -152,6 +153,25 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const form = document.querySelector("form");
 
+const email2 = document.getElementById("email2");
+const password2 = document.getElementById("password2");
+const name2 = document.getElementById("nom");
+const foto = document.getElementById("foto");
+
+function cadastrarDados()   {
+    dado1.textContent = name2.value;
+    dado2.textContent = email2.value;
+    dado3.textContent = password2.value;
+    perfil2.document = foto.value
+}
+
+function abrirlogin3()   {
+    document.getElementById('terceiro').style.top = "17.5%";
+}
+function fecharlogin3()   {
+    document.getElementById('terceiro').style.top = "-100%";
+}
+
 function pegaToken(){
 
     const inputEmail = document.querySelector('input[type="text"]');
@@ -222,4 +242,6 @@ form.addEventListener("submit", (e) => {
     }
 
     pegaToken();
+
+
 });

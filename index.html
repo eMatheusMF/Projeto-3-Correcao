@@ -157,14 +157,43 @@
               <label for="password"><b>Senha:</b></label>
               <input type="password" id="password2" placeholder="  Digite a sua senha"/>
             </div>
-            <button class="botaoo" type="submit">Cadastrar</button>
+
+            <div>
+              <img src="./css/imagens/user.jpg" class="foto">
+              <input type="file" id="perfil"/>
+            </div>
+
+            <button class="botaoo4" type="button" onclick="cadastrarDados()">Cadastrar</button>
+            <button class="botaoo4" type="button" onclick="abrirlogin3()">Mostrar</button>
           </form>
         </div>
       </div>
 
+      <!-- MOSTRA -->
+      <div class="modal" id="terceiro">
+          <span class="close" onclick="fecharlogin3()">&times;</span>
+
+        <div class="dados1">
+          <label for="email"><b>Nome: </b></label>
+          <small id="dado1"></small>
+        </div>
+
+        <div class="dados1">
+          <label for="email"><b>E-mail: </b></label>
+          <small id="dado2"></small>
+        </div>
+
+        <div class="dados1">
+          <label for="email"><b>Senha: </b></label>
+          <small id="dado3"></small>
+        </div>
+
+        <img id="perfil2">
+      </div>
     </div>
 
   <script src="script.js"></script>
+  <script src="app.js"></script>
   <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
 </body>
 

@@ -106,6 +106,17 @@ small{
   z-index: 2;
 }
 
+#terceiro{
+  top: -100%;
+  left: 30%;
+  position: fixed;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
 .close{
   font-size: 22px;
   margin: 20px;
@@ -180,6 +191,26 @@ small{
   color: #ffffff;
 }
 
+.botaoo3{
+  margin-top: 5%;
+  height: 50px;
+  width: 40%;
+  border-radius: 50px;
+  border: none;
+  background-color: #1d1c1c;
+  color: #ffffff;
+}
+
+.botaoo4{
+  margin-top: 5%;
+  height: 50px;
+  width: 40%;
+  border-radius: 50px;
+  border: none;
+  background-color: #1d1c1c;
+  color: #ffffff;
+}
+
 .botaoo:hover{
   background-color: #000000;
   transition: background-color 1s;
@@ -223,6 +254,36 @@ small{
   width: 50%;
   margin-top: 10px;
   border-radius: 8px;
+}
+
+.foto{
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.dados1{
+  font-size: 40px;
+  color: #000000;
+  margin-top: 7%;
+}
+
+.dados2{
+  font-size: 40px;
+  color: #000000;
+  margin-top: 14%;
+}
+
+.dados3{
+  font-size: 40px;
+  color: #000000;
+  margin-top: 21%;
+}
+
+.perfil2{
+  height: 40px;
+  width: 40px;
 }
 
 .azul2 {
