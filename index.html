@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+  <title>Weather</title>
+</head>
+
+<body>
+
+  <div class="azul1">
+
+    <div class="menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <a href="https://www.climatempo.com.br/" class="logoclima">
+      <img src="https://www.climatempo.com.br/dist/images/v2/svg/logo-climatempo-stormgeo.svg">
+    </a>
+    
+    <div class="pesquisa"></div>
+    
+    <input type="search"
+        class="form-control"
+        placeholder=" Busque por uma cidade..."
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"/>
+    <button class="btn" type="button" id="button-addon2">
+      <i class="fa fa-search"></i>
+    </button>
+
+    <button class="azullogin" onclick="abrirlogin()" type="button">
+      <img class="icon" src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1506/ylivdesign150603485/41373820-user-sign-icon.jpg?ver=6"/>
+      <h1 class="azul letras">Faça seu login</h1>
+    </button>
+
+  </div>
+
+  <div class="azul2">
+    <a class="link" href="https://www.climatempo.com.br/">Clima e Previsão do Tempo</a>
+    <div class="azuldivisor"></div>
+    <a class="link" href="https://www.climatempo.com.br/">
+      <img src="./css/imagens/3.svg" class="nuvem" />
+      &nbsp;&nbsp;São Paulo, SP
+    </a>
+  </div>
+
+  <!-- BRANCO -->
+  <div class="flutuante">
+    <div class="branco1">
+      <div class="linha1">Tempo agora em
+        <div class="cidade">Cidade, BR</div>
+      </div>
+
+      <div class="condicao">
+        <div class="tempo-img">
+            <img src="./icons/unknown.png">
+        </div>
+        <div class="tempo-temp">
+          <div>00</div>
+          <span>°c</span>
+        </div>
+      </div>
+    
+    <div class="max-min">00°c / 00°c</div>
+    
+    <div class="linha3">
+      <div class="icon1">
+        <img src="./css/imagens/cloud.svg" />&nbsp;&nbsp;
+        <div class="ceu">Situação do céu</div>
+      </div>
+    </div>
+      
+    <div class="linha5">
+      <div class="azulpalito"></div>
+      <span class="umid"><b>umidade</b></span>
+      <img src="./css/imagens/humidity.svg" class="imgUmid"/>
+      <span class='humidade'>00</span>%
+    </div>
+
+      <div class="info">
+        <a href="https://www.climatempo.com.br/previsao-do-tempo/cidade/558/saopaulo-sp"
+          class="informacoes"><b>Ver mais informações</b></a>
+      </div>
+
+      <div class="texto">
+        <span>Clima e previsão do tempo na Climatempo</span>
+        <div class="data">
+          <img src="./css/imagens/updated.png" class="update" />&nbsp;&nbsp;
+          <div class="date">
+            Data de hoje!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN E CADASTRO -->
+    <div class="bg-modal" id="modal">
+
+      <!-- LOGIN -->
+      <div class="modal">
+        <span class="close" onclick="fecharlogin()">&times;</span>
+        <h1 class="log"><b>LOGIN</b></h1>
+        <span class="emailsenha"><b>email: eve.holt@reqres.in<br>senha: cityslicka</b></span>
+        <div class="cadastro">
+          <small id="textForm2"></small>
+          <small id="textForm"></small>
+          <small id="textEmail"></small>
+
+          <form autocomplete="off">
+            <div class="ema">
+              <label for="email"><b>E-mail: </b></label>
+              <input type="text" id="email" placeholder="  Digite o seu e-mail" />
+            </div>
+      
+            <div class="pass">
+              <small id="textPassword"></small>
+              <label for="password"><b>Senha:</b></label>
+              <input type="password" id="password" placeholder="  Digite a sua senha"/>
+            </div>
+            <button class="botaoo2" onclick="abrirlogin2()" type="button">Cadastro</button>
+            <button class="botaoo" type="submit">Entrar</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- CADASTRO -->
+      <div class="modal" id="segundo">
+        <span class="close" onclick="fecharlogin2()">&times;</span>
+        <h1 class="log"><b>CADASTRO</b></h1>
+        <div class="cadastro">
+          <small id="textForm2"></small>
+          <small id="textForm"></small>
+          <small id="textEmail"></small>
+
+          <form autocomplete="off">
+            <div class="ema">
+              <label for="email"><b>E-mail: </b></label>
+              <input type="text" id="email" placeholder="  Digite o seu e-mail" />
+            </div>
+      
+            <div class="pass">
+              <small id="textPassword"></small>
+              <label for="password"><b>Senha:</b></label>
+              <input type="password" id="password" placeholder="  Digite a sua senha"/>
+            </div>
+            <button class="botaoo" type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
